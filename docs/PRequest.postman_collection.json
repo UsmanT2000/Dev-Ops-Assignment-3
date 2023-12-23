@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "38237c4e-6d24-429a-af87-4f1d2a871602",
+		"name": "PRequest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28460308"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/parse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"file_path\":\"/home/usman/Downloads/SampleCSVFile_556kb.csv\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parse"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

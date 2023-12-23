@@ -1,0 +1,14 @@
+FROM golang:1.19-alpine  
+
+WORKDIR /app  // Set working directory
+
+COPY go.mod go.sum ./  
+RUN go mod download  // Download dependencies (if using Go modules)
+
+COPY . .  
+
+RUN go build -o main .  // Build the Go application (adjust for your language)
+
+EXPOSE 8080  
+
+CMD ["./main"]  // Default command to run (adjust for your entry point)
